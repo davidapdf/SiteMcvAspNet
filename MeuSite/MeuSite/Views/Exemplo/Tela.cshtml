@@ -1,0 +1,17 @@
+﻿
+@model IEnumerable<string>
+@{
+    ViewBag.Title = "Tela";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Tela</h2>
+
+<label> @ViewBag.TextoDoTitulo </label><br />
+
+<label> @ViewBag.DataHora </label><br />
+
+@foreach (var item in Model)
+{
+    <label> @item </label>
+}
